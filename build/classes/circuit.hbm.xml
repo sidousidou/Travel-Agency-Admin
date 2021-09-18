@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+		  "-//Hibernat/Hibernat Mapping DTD 3.0//EN"
+		  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+		  
+<hibernate-mapping package="modele">
+<class name="circuit" table="circuit">
+
+	<id name="codeC" column="codeC" type="integer">
+	<generator class="native" />
+	</id>
+
+	
+	<property name="dureeC" column="dureeC" type="string"></property>
+	<property name="villesC" column="villesC" type="string"></property>
+	<property name="idUserC" column="idUserC" type="integer"></property>
+	<property name="idVilleC" column="idVilleC" type="integer"></property>
+	
+	
+</class>
+
+
+</hibernate-mapping>
+
+		  

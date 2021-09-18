@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+		  "-//Hibernat/Hibernat Mapping DTD 3.0//EN"
+		  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+		  
+<hibernate-mapping package="modele">
+<class name="lieutouristique" table="lieutouristique">
+
+	<id name="idLT" column="idLT" type="integer">
+	<generator class="native" />
+	</id>
+
+	<property name="typeLT" column="typeLT" type="string"></property>
+	<property name="descriptionLT" column="descriptionLT" type="string"></property>
+	<property name="nomLT" column="nomLT" type="string"></property>
+	<property name="adresseLT" column="adresseLT" type="string"></property>
+	<property name="idVilleLT" column="idVilleLT" type="integer"></property>
+	
+</class>
+
+
+</hibernate-mapping>
+
+		  

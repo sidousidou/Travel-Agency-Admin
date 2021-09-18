@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+		  "-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+		  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+		  
+<hibernate-configuration>
+
+		<session-factory>
+			<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+			<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/travelagencydb</property>
+			<property name="hibernate.connection.username">root</property>
+			<property name="hibernate.connection.password">sidouhaha</property>
+			<property name="hibernate.connection.pool_size">100</property>
+			<!-- <property name="hibernate.connection.driver_class">root</property> -->
+			<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+			<property name="hibernate.current_session_context">thread</property>
+			<property name="hibernate.show_sql">true</property>
+			<!-- <property name="hbm2ddl.auto">update</property> -->
+			 <mapping resource="reservation.hbm.xml" />
+			 <mapping resource="hotel.hbm.xml" />
+			 <mapping resource="utilisateur.hbm.xml" />	
+			 <mapping resource="lieutouristique.hbm.xml" />
+			 <mapping resource="restaurant.hbm.xml" />
+			 <mapping resource="voyage.hbm.xml" />
+			 <mapping resource="circuit.hbm.xml" />
+			 <mapping resource="transport.hbm.xml" />
+			 <mapping resource="activite.hbm.xml" />
+			 <mapping resource="ville.hbm.xml" />
+			 
+			 
+			 	
+		</session-factory>
+		
+</hibernate-configuration>

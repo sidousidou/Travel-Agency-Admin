@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+		  "-//Hibernat/Hibernat Mapping DTD 3.0//EN"
+		  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+		  
+<hibernate-mapping package="modele">
+<class name="restaurant" table="restaurant">
+
+	<id name="idRes" column="idRes" type="integer">
+	<generator class="native" />
+	</id>
+
+	<property name="adresseR" column="adresseR" type="string"></property>
+	<property name="numTeleR" column="numTeleR" type="string"></property>
+	<property name="classementR" column="classementR" type="string"></property>
+	
+	
+</class>
+
+
+</hibernate-mapping>
+
+		  

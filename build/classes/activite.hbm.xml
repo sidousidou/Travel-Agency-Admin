@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+		  "-//Hibernat/Hibernat Mapping DTD 3.0//EN"
+		  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+		  
+<hibernate-mapping package="modele">
+<class name="activite" table="activite">
+
+	<id name="idA" column="idA" type="integer">
+	<generator class="native" />
+	</id>
+
+	<property name="typeA" column="typeA" type="string"></property>
+	<property name="descriptionA" column="descriptionA" type="string"></property>
+	<property name="idVilleA" column="idVilleA" type="integer"></property>
+	
+</class>
+
+
+</hibernate-mapping>
+
+		  
